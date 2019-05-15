@@ -3,7 +3,7 @@ import sys
 from impementacion_lexer import *
 
 def usage():
-    sys.stderr.write('Usage: imp filename\n')
+    sys.stderr.write('Usage: implementacion filename\n')
     sys.exit(1)
 
 if __name__ == '__main__':
@@ -11,6 +11,6 @@ if __name__ == '__main__':
         usage()
     filename = sys.argv[1]
     text = open(filename).read()
-    tokens = imp_lex(text)
+    tokens = implementacion_lexer(text)
     for t in tokens:
         print t
