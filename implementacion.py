@@ -1,9 +1,9 @@
 import sys
 
-from impementacion_lexer import *
+from imp_lexer import *
 
 def usage():
-    sys.stderr.write('Usage: implementacion filename\n')
+    sys.stderr.write('Usage: imp filename\n')
     sys.exit(1)
 
 if __name__ == '__main__':
@@ -11,6 +11,7 @@ if __name__ == '__main__':
         usage()
     filename = sys.argv[1]
     text = open(filename).read()
-    tokens = implementacion_lexer(text)
+    tokens = imp_lex(text)
     for t in tokens:
         print t
+
