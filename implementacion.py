@@ -1,6 +1,6 @@
 import sys
 
-from imp_lexer import *
+from impementacion_lexer import *
 
 def usage():
     sys.stderr.write('Usage: imp filename\n')
